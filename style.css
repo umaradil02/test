@@ -115,7 +115,8 @@ span {
     height: 100%;
     border-left: 3px solid rgba(34, 235, 235, 0.671);
     right: -8px;
-    animation: cursor 0.6 infinite, typing 20s steps(14) infinite ;
+    animation: cursor 0.6 infinite;
+    animation: typing 20s steps(14) infinite ;
 }
 @keyframes cursor{
     to{
