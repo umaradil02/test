@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: s100vh;
     padding: 10rem 7% 2rem;
 }
 
@@ -30,12 +30,15 @@ section {
     top: 0;
     width: 100%;
     padding: 2rem 8%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color:#191f36 ;
     display: flex;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
     z-index: 100;
+}
+.header.sticky{
+    border-bottom: .1px solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -101,76 +104,14 @@ span {
     min-width: 280px;
 }
 .home-content h3 span{
-    position: relative;
-}
-.home-content h3 span::before{
-    content: "Web developer";
     color: rgba(34, 235, 235, 0.671);
-    animation: my 20s infinite;
-}
-.home-content h3 span::after{
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid rgba(34, 235, 235, 0.671);
-    right: -8px;
-    animation: cursor 0.6 infinite;
-    animation: typing 20s steps(14) infinite ;
-}
-@keyframes cursor{
-    to{
-        border-left: 2px solid rgba(34, 235, 235, 0.671);
-    }
-}
-@keyframes my{
-    0%,
-    20%{
-        content:"Frontent Designer";
-    }
-    21%,
-    40%{
-        content:"Web Designer";
-    }
-    41%,
-    60%{
-        content:"UI / UX Designer"
-    }
-    61%,
-    80%{
-        content:"Graphic Designer"
-    }
-    81%,
-    100%{
-        content:"Digital Marketer"
-    }
-}
-@keyframes typing{
-10%,
-15%,
-30%,
-35%,
-50%,
-55%,
-70%,
-75%,
-90%,
-95%{
-    width: 0;
-}
-5%,
-20%,
-25%,
-40%,
-45%,
-60%,
-65%,
-80%,
-85%{
-    width: calc(100% + 8px);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    min-width: 280px;
 }
 
-}
+
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
@@ -239,6 +180,7 @@ span {
 .home-img img {
     width: 35vw;
     animation: img 4s ease-in-out infinite;
+    background:transparent;
 }
 @keyframes img{
     0%{
@@ -565,17 +507,24 @@ form {
         margin: 3rem 0;
 
     }
+    .fa-xmark{
+        width: 20px;
+        color: #fff;
+    }
 
     .navbar-menu li a {
         font-size: 2rem;
     }
 
-    .Navbar__ToggleShow {
+    .nav_active {
         display: block;
     }
 
     .home {
         flex-direction: column;
+    }
+    .home-content{
+        order: 2;
     }
 
     .home-content h3 {

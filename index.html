@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,14 +14,14 @@
 <body>
     <header class="header">
         <a href="#logo" class="logo">umar <span>adil</span></a>
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <div id="menu-icon" class="fas fa-bars"></div>
         <nav class="navbar">
             <ul class="navbar-menu">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#fortfolio">fortfolio</a></li>
+                <li><a href="#home" class="links">home</a></li>
+                <li><a href="#about" class="links">about</a></li>
+                <li><a href="#services" class="links">services</a></li>
+                <li><a href="#contact" class="links">contact</a></li>
+                <li><a href="#fortfolio" class="links">fortfolio</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +30,7 @@
         <div class="home-content">
             <h3>Hello it 's me</h3>
             <h1>umar adil</h1>
-            <h3 >and i'm <span></span></h3>
+            <h3 >and i'm <span class="multiple-text"></span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus neque vitae quia assumenda maxime
                 totam quisquam provident, earum suscipit natus!</p>
             <div class="social-icon">
@@ -40,13 +41,13 @@
             </div>
             <a href="#" class="btn">hire me</a>
         </div>
-        <div class="home-img"><img src="./images/07.png" alt=""></div>
+        <div class="home-img"><img src="/images/my_pic-removebg-preview.png" alt=""></div>
         <!-- home section end -->
     </section>
     <!-- about section start -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="./images/07.png" alt="">
+            <img src="/images/my_pic-removebg-preview.png" alt="">
         </div>
         <div class="abou-content">
             <h2 class="heading" id="h2">about <span>me!</span></h2>
@@ -163,7 +164,7 @@
     <!-- footer section start -->
     <footer class="footer">
         <div class="footer-text">
-            <p>copyright &copy; 2024 by umar adil | all rights reserved</p>
+            <p>copyright &copy; <span class="date"></span> by umar adil | all rights reserved</p>
         </div>
         <div class="footer-icon">
             <a href="#home"><i class='bx bxs-chevrons-up'></i>
@@ -171,7 +172,8 @@
         </div>
         <!-- footer section end -->
     </footer>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 
