@@ -180,6 +180,9 @@ span {
 .home-img img {
     width: 35vw;
     animation: img 4s ease-in-out infinite;
+    background-image: url(/images/my_pic-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
     background:transparent;
 }
 @keyframes img{
